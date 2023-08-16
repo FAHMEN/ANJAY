@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .animasi-gambar {
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+    animation: spin 4s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+</head>
+<body>
+
+<img src="https://i.ibb.co/xGdFj8z/Screenshot-2023-08-15-19-25-22-848-com-miui-gallery.jpg" alt="Gambar Animasi" class="animasi-gambar">
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .blinking {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 49.9%, 100% {
+      opacity: 1;
+    }
+    50%, 99.9% {
+      opacity: 0;
+    }
+  }
+
+  .scrolling-text {
+    font-size: 24px;
+    color: green;
+    animation: scroll 5s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="blinking">
+    <h1>SAURUP SANTI</h1>
+  </div>
+  <div class="scrolling-text">
+    SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI  SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI  SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI  SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI  SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI  SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI SAURUP SANTI
+  </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .gambar-sedang {
+    width: 300px;
+    height: auto;
+    animation: jedagjedug 0.2s infinite;
+  }
+
+  @keyframes jedagjedug {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+  .posisi-kanan {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .posisi-kiri {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  .posisi-atas {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .posisi-bawah {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://i.ibb.co/xGdFj8z/Screenshot-2023-08-15-19-25-22-848-com-miui-gallery.jpg" alt="Gambar Sedang" class="gambar-sedang">
+</div>
+
+<div class="posisi-kanan">
+  <img src="https://i.ibb.co/xGdFj8z/Screenshot-2023-08-15-19-25-22-848-com-miui-gallery.jpg" alt="Gambar Sedang" class="gambar-sedang">
+</div>
+
+<div class="posisi-kiri">
+  <img src="https://i.ibb.co/xGdFj8z/Screenshot-2023-08-15-19-25-22-848-com-miui-gallery.jpg" alt="Gambar Sedang" class="gambar-sedang">
+</div>
+
+<div class="posisi-atas">
+  <img src="https://i.ibb.co/xGdFj8z/Screenshot-2023-08-15-19-25-22-848-com-miui-gallery.jpg" alt="Gambar Sedang" class="gambar-sedang">
+</div>
+
+<div class="posisi-bawah">
+  <img src="https://i.ibb.co/xGdFj8z/Screenshot-2023-08-15-19-25-22-848-com-miui-gallery.jpg" alt="Gambar Sedang" class="gambar-sedang">
+</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .button-container {
+    margin-bottom: 20px;
+  }
+
+  .my-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h1>Selamat Datang!</h1>
+  <p>Selamat datang di halaman kami.</p>
+</div>
+
+<div class="button-container">
+  <a href="https://youtu.be/N7dviwRBoDg" class="my-button">Kunjungi Situs</a>
+</div>
+
+</body>
+</html>
